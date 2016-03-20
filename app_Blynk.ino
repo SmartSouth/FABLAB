@@ -13,7 +13,7 @@ char auth[] = "YOUR-AUTHENTICATION-TOKEN";
 void setup()
 {
   Serial.begin(9600);
-  Blynk.begin(auth, "heisenberg", "mrwhite13");
+  Blynk.begin(auth, "WIFI_NAME_HERE", "WIFI_PASSWORD_HERE");
 }
 
 void loop()
