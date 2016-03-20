@@ -1,41 +1,7 @@
-# Fablab London - Internet of Things 
-
-![Node MCU](http://www.seeedstudio.com/depot/images/113990105%201.jpg)
-
-1. [Setting up the software toolchain](https://github.com/SmartSouth/fablablondon/wiki/IoT-Taster-Fablab-London#setting-up-the-software-toolchain)
-
-2. [Social media and IoT: IFTTT](https://github.com/SmartSouth/fablablondon/wiki/IoT-Taster-Fablab-London#social-media-and-iot-ifttt)
-
-3. [The anatomy of code](https://github.com/SmartSouth/fablablondon/wiki/IoT-Taster-Fablab-London#blynk_app)
-
-4. [Blynk app](https://github.com/SmartSouth/fablablondon/wiki/IoT-Taster-Fablab-London#blynk_app)
-
-
-
-5. [An online dashboard: io.adafruit.com](https://github.com/SmartSouth/fablablondon/wiki/IoT-Taster-Fablab-London#an-online-dashboard-ioadafruitcom)
-
-## Setting up the software toolchain
-
-1. Download the Arduino IDE from <https://www.arduino.cc/en/Main/Software>
-
-2. Install the IDE and go to 'Settings' or 'Preferences' and copy-paste the following link to the '_Additional Board Manager URLs'_ field: http://arduino.esp8266.com/stable/package_esp8266com_index.json
-
-3. Open Boards Manager from Sketch > Include Library > Manage Libraries menu and install esp8266 platform (and don't forget to select your ESP8266 board from Tools > Board menu after installation).
-
-4. Download and install the USB driver from [https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx)
-
-5. Connect the board with the USB cable.
-
-
-
-## Social media and IoT: IFTTT
-
-Copy and paster the following code to the Arduino IDE. 
-
 `#include <ESP8266WiFi.h>`
  
-`const char* ssid     = "heisenberg";`
-`const char* password = "mrwhite13";`
+`const char* ssid     = "WIFI";`
+`const char* password = "password";`
  
 `const char* host = "maker.ifttt.com";`
  
@@ -100,12 +66,4 @@ Copy and paster the following code to the Arduino IDE.
   `Serial.println("closing connection");`
 `}`
 
-## The anatomy of code
 
-## Blynk_app
-
-1. Download and install the 'Blynk' app from your phones app store 
-
-2. Register when prompted
-
-## An online dashboard: io.adafruit.com
